@@ -67,7 +67,7 @@
           z-index: 2;
           width: 100%;
           height: 500px;
-          background-image: linear-gradient(rgba(0,0,0,0) 10%,rgba(0,0,0,.4) 20%,rgb(36, 36, 36) 50% ,rgba(36,36,36) 100%);
+          background-image: linear-gradient(rgba(0, 0, 0, 0) 10%,rgba(0,0,0,.4) 20%,rgb(36, 36, 36) 50% ,rgba(36,36,36) 100%);
         }
         span{
           font-family: orbitron;
@@ -100,8 +100,25 @@
         }
         audio{
           position: absolute;
+          width: 1px;
           height: 1px;
           z-index: -1;
+        }
+        @media screen {
+          .hero h3{
+            font-size: 190%;
+          }
+          .hero p{
+            font-size: 60%;
+            padding-top: 13em;
+          }
+          .hero, .hero  h1, .hero p{
+            height: 300px;
+          }
+          .hero  h1{
+            font-size: 3.5em;
+            padding-top: 2.5em;
+          }
         }
   </style>
 </head>
@@ -123,10 +140,12 @@
               </ul>
               <ul class="sidenav black" id="mobile-menu">
                 <li><a href="index.html" class="btn red"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="tributes.html" class="btn red"><i class="material-icons left">groups</i>Tributes</a></li>
               </ul>
             </div>
             <div class="col s12 l1">
-              <a class="btn-small waves-effect wave-light deep-orange accent-4" href="login.html">login</a>
+              <a class="btn-small waves-effect wave-light deep-orange accent-4 hide-on-small-only" href="login.html">login</a>
+              <a class="hide-on-med-and-up tooltipped" data-tooltip="Login" href="login.html"><i class="material-icons">login</i></a>
             </div>
           </div>
         </div>

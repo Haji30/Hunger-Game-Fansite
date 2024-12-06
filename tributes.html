@@ -41,14 +41,14 @@
         }
         .hero h1{
           position: absolute;
-          top: 3em;
+          top: 1.5em;
           text-align: center;
           padding-top: 5.4em;
           color: white;
           z-index: 2;
           width: 100%;
           height: 500px;
-          background-image: linear-gradient(#00000000 10%,#00000066 20%,#242424 50% ,#242424 100%);
+          background-image: linear-gradient(rgba(0, 0, 0, 0) 10%,rgba(0,0,0,.4) 20%,rgb(36, 36, 36) 50% ,rgba(36,36,36) 100%);
         }
         section.section.container{
           position: relative;
@@ -75,6 +75,7 @@
         }
         audio{
           position: absolute;
+          width: 1px;
           height: 1px;
           z-index: -1;
         }
@@ -109,6 +110,16 @@
           .parallax-container {
           height: 20%;
           }
+          .hero p{
+            padding-top: 8em;
+          }
+          .hero, .hero  h1, .hero p{
+            height: 300px;
+          }
+          .hero  h1{
+            font-size: 3.5em;
+            padding-top: 4em;
+          }
         }
   </style>
 </head>
@@ -128,16 +139,18 @@
                 <li><a href="panem.html" class="transparent"><i class="material-icons left">map</i>Panem</a></li>
                 <li><a href="#74th" class="transparent"><i class="material-icons left">groups</i>74th HG</a></li>
                 <li><a href="#75th" class="transparent"><i class="material-icons left">groups_2</i>75th HG</a></li>
-                <li><a href="index.html" class="btn transparent"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="index.html" class="transparent"><i class="material-icons left">home</i>Home</a></li>
               </ul>
               <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="panem.html" class="btn red"><i class="material-icons left">map</i>Panem</a></li>
                 <li><a href="#74th" class="btn red"><i class="material-icons left">groups</i>74th hg</a></li>
                 <li><a href="#75th" class="btn red"><i class="material-icons left">groups_2</i>75th HG</a></li>
                 <li><a href="index.html" class="btn red"><i class="material-icons left">home</i>Home</a></li>
               </ul>
             </div>
             <div class="col s12 l1">
-              <a class="btn-small waves-effect wave-light deep-orange accent-4" href="login.html">login</a>
+              <a class="btn-small waves-effect wave-light deep-orange accent-4 hide-on-small-only" href="login.html">login</a>
+              <a class="hide-on-med-and-up tooltipped" data-tooltip="Login" href="login.html"><i class="material-icons">login</i></a>
             </div>
           </div>
         </div>
@@ -147,7 +160,7 @@
 
   <section class="hero">
     <h1 id="74th" class="scrollspy">74th Hunger Games</h1>
-  </section><br><br><br><br>
+  </section>
 
   <!-- Characters Section -->
    <section class="section container">
