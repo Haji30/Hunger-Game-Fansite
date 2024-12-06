@@ -1,0 +1,362 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hunger Games fansite</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="icon" type="image/x-icon" href="img/tabLogo.png">
+  <style>
+    body{
+      background-color: #242424;
+      }
+    h1,h2,h3,h5{
+      font-family: orbitron;
+      }
+    header{
+      background: black;
+      background-size: cover;
+      background-position: center;
+      }
+      a.brand-logo{
+        padding-top: 5px;
+      }
+      a.btn-small{
+        margin-top: 16px;
+      }
+      ul li a:hover{
+        transition: color .25s;
+        color: #dd2c00;
+      }
+      .hero{
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            background-image: url(img/banner.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero p{
+            color: white;
+            position: absolute;
+            top: -15px;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            padding-top: 10em;
+            padding-left: 5em;
+            padding-right: 40%;
+            background-image: linear-gradient(to right,rgba(0,0,0,1) 20%,rgba(0,0,0,.7) 40%,rgba(0,0,0,.4) 70%,rgba(0,0,0,0) 100%);
+        }
+        .hero h3{
+            position: absolute;
+            z-index: 1;
+            color: white;
+            padding: 1em;
+            padding-top: 1.5em;
+        }
+        .hero h1{
+          position: absolute;
+          top: 1.5em;
+          text-align: center;
+          padding-top: 5.4em;
+          color: white;
+          z-index: 2;
+          width: 100%;
+          height: 500px;
+          background-image: linear-gradient(rgba(0,0,0,0) 10%,rgba(0,0,0,.4) 20%,rgb(36, 36, 36) 50% ,rgba(36,36,36) 100%);
+        }
+        section.section.container{
+          position: relative;
+          top: 115px;
+        }
+        .card1 img {
+          height: 200px;
+          object-fit: cover
+        }
+        .parallax-container {
+          height: 40%;
+        }
+        .tabs{
+          background-color: #1e1e1e;
+        }
+        .tabs .indicator{
+          background-color: #dd2c00;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: #2e2e2e;
+        }
+        div.col.s12.l5.center-align.white-text.grey.darken-3, div.container.section.scrollspy.grey.darken-4{
+          border-radius: 50px;
+        }
+        audio{
+          position: absolute;
+          height: 1px;
+          z-index: -1;
+        }
+        .hoverable:hover{
+          transition: background-color .25s;
+          background-color: #242424 !important;
+        }
+        .grey-text.text-darken-4.hoverable:hover{
+          transition: color .25s;
+          color: gray !important;
+        }
+        .facebook:hover{
+          transition: color .25s;
+          color: #0165e1 !important;
+        }
+        .twitter:hover{
+          transition: color .25s;
+          color: #1da1f2 !important;
+        }
+        .instagram:hover{
+          transition: background .25s, color .25s;
+          background: linear-gradient(300deg, #405de6, #c13584, #fd1d1d, #f77737) !important;
+                -webkit-background-clip: text !important;
+                background-clip: text;
+                color: transparent !important;
+        }
+        .youtube:hover{
+          transition: color .25s;
+          color: #ff0000 !important;
+        }
+        .input-field .prefix.active{
+          color: #ff3d00;
+        }
+        input[type=text]:not(.browser-default):focus:not([read-only]), input[type=email]:not(.browser-default):focus:not([read-only]), textarea.materialize-textarea:focus:not(:read-only){
+          border-bottom: 1px solid #ff3d00;
+          box-shadow: 0 1px 0 0 #ff3d00;
+        }
+        input[type=text]:not(.browser-default):focus:not([read-only])+label, input[type=email]:not(.browser-default):focus:not([read-only])+label, textarea.materialize-textarea:focus:not(:read-only)+label{
+          color: #ff3d00;
+        }
+        @media screen and (max-width: 670px){
+          .parallax-container {
+          height: 20%;
+          }
+        }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="black">
+      <div class="nav-wrapper transparent">
+        <div class="container">
+          <a href="#" class="brand-logo"><img width="160px" src="img/logo.png" alt="Hunger Games"></a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <div class="row right">
+            <div class="col s12 l11">
+              <ul class="right hide-on-med-and-down">
+                <li><a href="#tributes" class="transparent"><i class="material-icons left">groups</i>Tributes</a></li>
+                <li><a href="#panem" class="transparent"><i class="material-icons left">map</i>Panem</a></li>
+                <li><a href="#contact" class="transparent"><i class="material-icons left">contact_support</i>Contact</a></li>
+              </ul>
+              <ul class="sidenav grey lighten-2" id="mobile-menu">
+                <li><a href="#tributes" class="btn red"><i class="material-icons left">groups</i>Tributes</a></li>
+                <li><a href="#panem" class="btn red"><i class="material-icons left">map</i>Panem</a></li>
+                <li><a href="#contact" class="btn red"><i class="material-icons left">contact_support</i>Contact</a></li>
+              </ul>
+            </div>
+            <div class="col s12 l1">
+              <a class="btn-small waves-effect wave-light deep-orange accent-4" href="login.html">login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h3>The Hunger Games</h3>
+    <p>May the odds be ever in your favor</p>
+    <h1>Meet The Characters</h1>
+  </section>
+
+  <!-- Characters Section -->
+  <section class="section container">
+    <div class="row">
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/peeta.jpg" alt="Peeta Mellark">
+          </div>
+          <div class="card-content grey darken-4">
+            <span class="card-title white-text">Peeta Mellark</span>
+            <p class="white-text">The kind and compassionate baker's son who is fiercely loyal to Katniss.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card">
+          <div class="card-image">
+            <img class="materialboxed" src="img/katniss.jpg" alt="Katniss Everdeen">
+          </div>
+          <div class="card-content">
+            <span class="card-title">Katniss Everdeen</span>
+            <p>The Girl on Fire. A brave and skilled archer who becomes the symbol of rebellion in Panem.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m4">
+        <div class="card hoverable">
+          <div class="card-image">
+            <img class="materialboxed" src="img/haymitch.jpg" alt="Haymitch Abernathy">
+          </div>
+          <div class="card-content grey darken-4">
+            <span class="card-title white-text">Haymitch Abernathy</span>
+            <p class="white-text">The cynical yet resourceful mentor who guides Katniss and Peeta through the Games.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br><br><br>
+
+  <!-- Parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img width="100%" src="img/banner2.jpg" alt="banner2" class="materialboxed responsive-img">
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- services / tabs -->
+  <div class="container section scrollspy grey darken-4" id="tributes">
+    <div class="row">
+      <div class="col s12 l5">
+        <h5 class="deep-orange-text text-accent-4">The Hunger Games</h5>
+        <p class="white-text">The Hunger Games is a gripping series by Suzanne Collins that tells the story of survival, rebellion, and courage in a dystopian future. Set in the nation of Panem, the annual Hunger Games pits tributes against each other in a fight to the death, while the Capitol reigns supreme. Follow the journey of Katniss Everdeen as she sparks a revolution against tyranny.</p><br><br>
+        <a href="tributes.html#74th" class="btn transparent deep-orange accent-4 waves-effect wave-light right">See 74th Tributes<i class="material-icons right">chevron_right</i></a><br><br>
+        <a href="tributes.html#75th" class="btn transparent deep-orange accent-4 waves-effect wave-light right">See 75th Tributes<i class="material-icons right">chevron_right</i></a>
+      </div>
+      <div class="col s12 l6 offset-l1">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#74th"class="white-text">74th Hunger Games</a>
+          </li>
+          <li class="tab col s6">
+            <a href="#75th"class="white-text">75th Hunger Games</a>
+          </li>
+        </ul>
+        <div class="col s12" id="74th">
+          <p class="flow-text white-text">74th Hunger Games</p>
+          <img width="100%" src="img/74th.jpg" alt="" class="materialboxed center-align">
+          <i class="material-icons"></i>
+          <p class="white-text">The 74th Hunger Games began on a large, flat expanse of hard packed dirt, with the Cornucopia at its center. The 24 tributes were set up in a ring around it, vying to claim its weapons, food, camping supplies, and medical supplies.</p>
+        </div>
+        <div class="col s12" id="75th">
+          <p class="flow-text white-text">75th Hunger Games</p>
+          <img width="100%" src="img/75th.jpg" alt="" class="materialboxed center-align">
+          <p class="white-text">This year, tributes were reaped from a pool of 59 victors. The Career districts had the largest pools of victors, but each district had managed to secure at least one male and one female victor to meet this year's premise.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <!-- Parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img width="100%" src="img/capitolBanner.jpg" alt="banner3" class="materialboxed responsive-img">
+    </div>
+  </div><br><br><br>
+
+  <div class="container scrollspy" id="panem">
+    <div class="row ">
+      <div class="col s12 l7">
+        <img widht="100%" src="img/panem-map.jpg" alt="" class="materialboxed responsive-img">
+      </div>
+      <div class="col s12 l5 center-align white-text grey darken-3">
+        <h2>Panem</h2>
+        <p>Panem is a sovereign nuclear state and democratic constitutional republic established sometime after a series of ecological disasters and a global conflict brought about the collapse of modern civilization. It is situated in North America, consisting of a federal district, the Capitol, and thirteen outlying districts.</p>
+        <a href="panem.html"><button class="btn grey waves-effect wave-dark grey-text text-darken-4 hoverable">see more...</button></a><br><br>
+      </div>
+    </div>
+  </div>
+  <br><br><hr><br><br>
+
+  <!-- Contact Section -->
+<div class="container section scrollspy grey darken-4" id="contact">
+  <div class="row">
+    <div class="col s12 l5">
+      <h5 class="deep-orange-text text-accent-4">Contact Us</h5>
+      <p class="white-text">We would love to hear from you! Whether you have questions, feedback, or ideas about the Hunger Games universe, feel free to reach out.</p>
+      <ul>
+        <li class="white-text"><i class="material-icons deep-orange-text text-accent-4">email</i> elijlaqui@gmail.com</li>
+        <li class="white-text"><i class="material-icons deep-orange-text text-accent-4">phone</i> +63 991-482-1222</li>
+        <li class="white-text"><i class="material-icons deep-orange-text text-accent-4">place</i> District 12, Panem</li>
+      </ul>
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <form>
+        <div class="input-field">
+          <i class="material-icons prefix">person</i>
+          <input type="text" id="name" class="white-text">
+          <label for="name">Name</label>
+        </div>
+        <div class="input-field">
+          <i class="material-icons prefix">email</i>
+          <input type="email" id="email">
+          <label for="email">Your Email</label> 
+      </div>
+        <div class="input-field">
+          <i class="material-icons prefix">message</i>
+          <textarea id="message" class="materialize-textarea white-text"></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button class="btn deep-orange accent-4 waves-effect waves-light" type="submit">Send<i class="material-icons right">send</i></button>
+      </form>
+    </div>
+  </div>
+</div><br><br>
+
+<!-- Footer -->
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">The Hunger Games Fansite</h5>
+        <p class="grey-text text-lighten-4">A site for fans of Suzanne Collins' epic dystopian series. Stay updated and celebrate the spirit of Panem!</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Follow Us</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3 facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a class="grey-text text-lighten-3 twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a class="grey-text text-lighten-3 instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a class="grey-text text-lighten-3 youtube" href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright black">
+    <div class="container center-align">&copy; 2024 The Hunger Games Fansite. All rights reserved.
+      <audio src="Horn_of_Plenty.mp3" controls loop autoplay></audio>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>

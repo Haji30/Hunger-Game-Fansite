@@ -1,0 +1,344 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panem | The Hunger Games fansite</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Runic&family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <link rel="icon" type="image/x-icon" href="img/tabLogo.png">
+  <style>
+    body{
+      background-color: #242424;
+      }
+    h1,h2,h3,h5{
+      font-family: orbitron;
+      }
+    header{
+      background: black;
+      background-size: cover;
+      background-position: center;
+      }
+      a.brand-logo{
+        padding-top: 5px;
+      }
+      a.btn-small{
+        margin-top: 16px;
+      }
+      ul li a:hover{
+        transition: color .25s;
+        color: #dd2c00;
+      }
+      .hero{
+            width: 100%;
+            height: 500px;
+            background-color: white;
+            background-image: url(img/capitolBanner.jpg);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .hero p{
+            color: white;
+            position: absolute;
+            top: -15px;
+            left: 0;
+            width: 100%;
+            height: 500px;
+            padding-top: 10em;
+            padding-left: 5em;
+            padding-right: 40%;
+            background-image: linear-gradient(to right,rgba(0,0,0,1) 20%,rgba(0,0,0,.7) 40%,rgba(0,0,0,.4) 70%,rgba(0,0,0,0) 100%);
+        }
+        .hero h3{
+            position: absolute;
+            z-index: 1;
+            color: white;
+            padding: 1em;
+            padding-top: 1.5em;
+        }
+        .hero h1{
+          position: absolute;
+          top: 1.5em;
+          text-align: center;
+          padding-top: 5.4em;
+          color: white;
+          z-index: 2;
+          width: 100%;
+          height: 500px;
+          background-image: linear-gradient(rgba(0,0,0,0) 10%,rgba(0,0,0,.4) 20%,rgb(36, 36, 36) 50% ,rgba(36,36,36) 100%);
+        }
+        span{
+          font-family: orbitron;
+        }
+        .card{
+          z-index: 3;
+        }
+        .hoverable:hover{
+          transition: background-color .25s;
+          background-color: #242424 !important;
+        }
+        .facebook:hover{
+          transition: color .25s;
+          color: #0165e1 !important;
+        }
+        .twitter:hover{
+          transition: color .25s;
+          color: #1da1f2 !important;
+        }
+        .instagram:hover{
+          transition: background .25s, color .25s;
+          background: linear-gradient(300deg, #405de6, #c13584, #fd1d1d, #f77737) !important;
+                -webkit-background-clip: text !important;
+                background-clip: text;
+                color: transparent !important;
+        }
+        .youtube:hover{
+          transition: color .25s;
+          color: #ff0000 !important;
+        }
+        audio{
+          position: absolute;
+          height: 1px;
+          z-index: -1;
+        }
+  </style>
+</head>
+<body>
+  <!-- navbar -->
+  <header>
+    <nav class="black">
+      <div class="nav-wrapper transparent">
+        <div class="container">
+          <a href="#" class="brand-logo"><img width="160px" src="img/logo.png" alt="Hunger Games"></a>
+          <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+            <i class="material-icons">menu</i>
+          </a>
+          <div class="row right">
+            <div class="col s12 l10">
+              <ul class="right hide-on-med-and-down">
+                <li><a href="tributes.html" class="transparent"><i class="material-icons left">groups</i>Tributes</a></li>
+                <li><a href="index.html" class="transparent"><i class="material-icons left">home</i>Home</a></li>
+              </ul>
+              <ul class="sidenav black" id="mobile-menu">
+                <li><a href="index.html" class="btn red"><i class="material-icons left">home</i>Home</a></li>
+              </ul>
+            </div>
+            <div class="col s12 l1">
+              <a class="btn-small waves-effect wave-light deep-orange accent-4" href="login.html">login</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h3>Panem</h3>
+    <p>a sovereign nuclear state and democratic constitutional republic established sometime after a series of ecological disasters and a global conflict brought about the collapse of modern civilization. It is situated in North America, consisting of a federal district, the Capitol, and thirteen outlying districts.</p>
+    <h1>Map of Panem</h1>
+  </section><br><br><br><br>
+  
+  <div class="container">
+    <div class="card hoverable">
+      <div class="card-image waves-effect waves-block waves-light">
+        <img class="activator" src="img/panem-map.jpg">
+      </div>
+      <div class="card-content grey darken-3 hoverable">
+        <span class="card-title activator white-text">Panem<i class="material-icons right">more_vert</i></span>
+      </div>
+      <div class="card-reveal grey darken-3 white-text">
+        <span class="card-title">Panem<i class="material-icons right">close</i></span>
+        <p>The nation of Panem is separated into a total of thirteen self-contained subdivisions known as districts spread across North America. For seventy-five years after the First Rebellion, twelve of the districts were recognized as operational by the Capitol, while District 13 was destroyed during the closing days of the war (in reality having secretly seceded as an independent nation-state as part of a separate peace with the Capitol). Following the Second Rebellion, District 13 was reintegrated into Panem's political structure.</p>
+        <p>Each of the districts were responsible for producing, procuring, or refining goods in a particular industry as dictated by the Capitol, with the vast majority of said goods being shipped to the Capitol to fuel the hedonistic and lavish lifestyles of the city's populace. Each district provides something different to the Capitol; for example, District 12 provided coal, District 11 provided agricultural produce, District 7 provided lumber, and District 4 provided seafood. District citizens have little freedom to choose careers outside of their district's designated industry. Free markets outside of the Capitol, such as the Hob in District 12, are illegal, though some grey market exchange is tolerated, and District 12 itself does have a merchant sector that provides goods such as a bakery. With all major industries privately owned by wealthy Capitol families under state oversight, Panem operates as a semi-feudal fascist state. All trade and commerce between the districts is generally forbidden, as most of the districts' produced goods are sent to the Capitol. Welfare levels vary significantly, and are often dependent on the goods it produces; some districts, such as 10, 11 and 12, are far more impoverished than wealthier districts like 1, 2, and 4, though no district is nearly as wealthy as the Capitol itself. Following the restructuring of Panem after the Second Rebellion, it is assumed the districts were allowed to diversify their economies as a rebuilt District 12 opened a medical facility.</p>
+      </div>
+    </div>
+  </div>
+  <br><br><hr>
+  <!-- photo / grid -->
+<section class="container section">
+  <div class="row toast hoverable">
+    <div class="col s12 l4 offset-l1">
+      <img src="img/capitol.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+        <h3 class="deep-orange-text text-accent-4">Capitol</h3>
+        <p class="white-text">The Capitol of Panem is a technologically advanced metropolis where the nation's most wealthy and powerful citizens live. The Capitol is also the colloquial name for the ruling government of Panem. As the seat of power in Panem, this city rules the nation's thirteen districts (twelve after The Dark Days), organizes and celebrates the Hunger Games inside its city limits (protected by anti-aircraft guns and multiple launch rocket systems, or MLRS's).</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-1.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 1</h3>
+      <p class="white-text">District 1 is the wealthiest district in Panem, whose primary industry is the manufacture of luxury items for the Capitol. As a result, District 1 has a generally favorable relationship with the Capitol, although they are still forced to participate in the annual Hunger Games like all the other districts. However, their money and privilege allow them to train their tributes for the Games without punishment.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4">
+      <img src="img/district-2.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+        <h3 class="deep-orange-text text-accent-4">District 2</h3>
+        <p class="white-text">District 2 is one of the thirteen districts of Panem. Located in the Rocky Mountains, extremely close to the Capitol itself, it is one of the largest and wealthiest districts. Publicly, District 2 is presented solely as the home of the nation's stone quarries and masonry workers, but it is also where many Peacekeepers are recruited, trained, and where weapons are manufactured for their usage.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-3.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 3</h3>
+      <p class="white-text">District 3 is one of the 13 districts of Panem. Its main industry is technology, and people manufacture televisions, computers, and other electronics.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4">
+      <img src="img/district-4.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+        <h3 class="deep-orange-text text-accent-4">District 4</h3>
+        <p class="white-text">District 4 is one of Panem's wealthiest districts. Its major industry is fishing, and children are trained for jobs in this industry from a young age.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-5.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 5</h3>
+      <p class="white-text">District 5 is one of the thirteen districts of Panem. Its main industry is power and utility, and the district is responsible for generating the power of the entire nation.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4">
+      <img src="img/district-6.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+        <h3 class="deep-orange-text text-accent-4">District 6</h3>
+        <p class="white-text">District 6 is one of the thirteen districts of Panem, whose principal industry is transportation.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-7.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 7</h3>
+      <p class="white-text">District 7 is one of the thirteen districts of Panem. It provided lumber and paper to the Capitol.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4">
+      <img src="img/district-8.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+        <h3 class="deep-orange-text text-accent-4">District 8</h3>
+        <p class="white-text">District 8 is one of the thirteen districts of Panem. Its main industry is textile production. They have at least one factory that is used for making Peacekeeper uniforms.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-9.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 9</h3>
+      <p class="white-text">District 9 is one of the thirteen districts of Panem, and its primary industry is grain production.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4">
+      <img src="img/district-10.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+        <h3 class="deep-orange-text text-accent-4">District 10</h3>
+        <p class="white-text">District 10 is one of the thirteen districts of Panem. Its main industry is livestock, and it provides meat to the Capitol.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-11.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 11</h3>
+      <p class="white-text">District 11 is one of the thirteen districts of Panem. Its main industry is agriculture.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4">
+      <img src="img/district-12.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 offset-l1">
+      <h3 class="deep-orange-text text-accent-4"">District 12</h3>
+      <p class="white-text">District 12 was the smallest and poorest of the thirteen districts of Panem. Located in Appalachia,[3] it had a population of around 8,000 people prior to being firebombed by the Capitol.[1] District 12's main industry is coal mining, but after the Second Rebellion, their main industry was converted to medicine.</p>
+    </div>
+  </div>
+
+  <div class="row toast hoverable">
+    <div class="col s12 l4 push-l6 offset-l1">
+      <img src="img/district-13.jpg" alt="" class="responsive-img materialboxed hoverable">
+    </div>
+    <div class="col s12 l6 pull-l6 right-align">
+      <h3 class="deep-orange-text text-accent-4"">District 13</h3>
+      <p class="white-text">District 13 is one of the thirteen districts of Panem, and for a 75-year period between the First and Second Rebellions, an independent nation. Located in far northeastern part of the country, District 13 was widely thought to have been destroyed by the Capitol during the climax of the First Rebellion</p>
+    </div>
+  </div>
+</section><br><br>
+
+<!-- Footer -->
+<footer class="page-footer grey darken-4">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">The Hunger Games Fansite</h5>
+        <p class="grey-text text-lighten-4">A site for fans of Suzanne Collins' epic dystopian series. Stay updated and celebrate the spirit of Panem!</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Follow Us</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3 facebook" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a class="grey-text text-lighten-3 twitter" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+          <li><a class="grey-text text-lighten-3 instagram" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a class="grey-text text-lighten-3 youtube" href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright black">
+    <div class="container center-align">&copy; 2024 The Hunger Games Fansite. All rights reserved.
+      <audio src="Horn_of_Plenty.mp3" controls loop autoplay></audio>
+    </div>
+  </div>
+</footer>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script>
+        $ (document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.materialboxed').materialbox();
+            $('.parallax').parallax();
+            $('.tabs').tabs();
+            $('.datepicker').datepicker({
+                disableWeekends: true
+            });
+            $('.tooltipped').tooltip();
+            $('.scrollspy').scrollSpy();
+        });
+    </script>
+</body>
+</html>
